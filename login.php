@@ -1,6 +1,18 @@
-<form method="post" action="begin.php?page=confirm">
-            <label for="usernaùe">username</label><br>
-            <input type="text" id="username" name="username" >
+<!doctype html>
+<html lang=nl>
 
-            <br><label for="code">Code</label><br>
-            <input type="text" id="straat" name="straat" >
+<?php include("<includes/head.php")?>
+
+<body>
+	<div class="container">
+		<?php 
+		include("<includes/nav.php");
+
+		include("<includes/loginpagina.php");
+		
+		include("<includes/footer.php")?>
+		
+	</div>
+</body>
+
+</html>

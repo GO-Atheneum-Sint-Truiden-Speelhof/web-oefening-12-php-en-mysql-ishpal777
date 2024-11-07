@@ -27,6 +27,34 @@
     else{
         echo "BERICHT NIET VERZONDEN";
     }
+    function saveToDB() {
+        $servername = "localhost";
+        $username = "ishpal777";
+        $password = "1234";
+        $dbname = "test";
+
+        $conn = new mysqli($servername, $username, $password, $dbname);
+    
+        if ($conn->connect_error) {
+            die("Connection failed: " . $conn->connect_error);
+        }
+    
+        $sql = "INSERT INTO wedstrijd (Naam, StraatNr, Postcode, Gemeente, Telefoon, Eamil, Geboortedatum, Camera, Lens, Beschrijving)
+        VALUES ('" . $_POST["Naam"] . "', '" . $_POST["StraatNr"] . "', '" . $_POST["Postcode"] . "', '" . $_POST["Gemeente"] . "', '" . $_POST["Telefoon"] . "', '" . $_POST["Eamil"] . "','" . $_POST["Geboortedatum"] . "',
+         '" . $_POST["Camera"] . "', '" . $_POST["geboorte"] . "', '" . $_POST["Lens"] . "'" , '" . $_POST["Beschrijving"] . "'" ;
+        
+        echo $sql;
+        
+        if ($conn->query($sql) === TRUE) {
+            echo "New record created";
+        } else {
+            echo "Error: " . $sql . "<br>" . $conn->error;
+        }
+    
+        $conn->close();
+    }
+
+
 ?>
  
 
