@@ -8,7 +8,7 @@
 		<?php 
 		include("<includes/nav.php");
 
-		include("<includes/loginpagina.php");
+		include("<includes/login.php");
 		
 		include("<includes/footer.php")?>
 		

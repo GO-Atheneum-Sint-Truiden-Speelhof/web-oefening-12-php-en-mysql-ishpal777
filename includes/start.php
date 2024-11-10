@@ -1,4 +1,5 @@
 <?php
+
 // cookie inlezen en datum weergeven
 $c_naam = 'cco_cookie';
 if (isset($_COOKIE[$c_naam])) {
@@ -8,7 +9,9 @@ echo
 <p>Je hebt deze website het laatst bezocht op '.$_COOKIE[$c_naam].'.</p>
 </div>
 </div>';
-} else {
+} 
+
+else {
 echo 
 '<div class="row">
 <div class="col tegel">
