@@ -14,7 +14,7 @@
 
 ## Algemene feedback ##
 * Je start 2x een sessie: 1. in nav.php, 2. in login.php. Dit geeft uiteraard een foutmelding.
-* login.php: Deze lijkt héél sterk op Matthew zijn code.
+* login.php: Deze lijkt héél sterk op die van je medeleerlingen.
 * login.php (74): Waarom is het _action_-attribuut leeg? Welk script roep je dan op?
 * login.php (81): het **endif** statement is verouderd sinds PHP 4.0.0. We gebruiken toch { } om codeblokken te onderscheiden?
 * inschrijving.php: Deze pagina zal niet werken. Je refereert naar functies die niet bestaan *getSubscriptions()* en *showLogin()* ( -2 )
