@@ -20,5 +20,4 @@
 * inschrijving.php: Deze pagina zal niet werken. Je refereert naar functies die niet bestaan *getSubscriptions()* en *showLogin()* ( -2 )
 * Bovendien include je het *fuction.php* bestand waarin ook maar liefst 8 PHP-fouten staan. Hier zijn fouten in de opbouw van de SQL-statements, worden er niet bestaande functies opgeroepen, ... ( -2 )
 
-* Je behaalde een score van __18/35__
-* 
+Je behaalde een score van __18/35__
